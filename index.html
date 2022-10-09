@@ -1,0 +1,373 @@
+<html>
+	<head>			
+		<title>univerdity</title>
+		<style type="text/css">
+			body{
+			
+  			 
+		}
+		#mainarea{
+  			  width: 100%;
+			 height: 100%;
+			background-image: url('jkl.webp');
+			background-attachment:fixed;
+			background-size: cover;
+   			background-position: center;
+			float: left;
+		}
+		#logoarea{
+			display: flex;
+   			 padding: 2% 2%;
+			margin: 2px 2px;
+			background:rgba(211, 0, 0, 0.2);
+    			justify-content: space-around;
+    			align-items: center;
+		}
+		.logoarea img{
+			width: 50px;
+		}
+		.logoarea-links{
+			flex:1;
+			text-align: right;
+		}
+		.logoarea-links ul li{
+			list-style: none;
+			display: inline-block;
+			padding: 8px 12px;
+			position: relative;
+		}
+		.logoarea-links ul li a{
+   			 color: white;
+   			 text-decoration:none;
+    			font-size: 20px;
+		}
+		.logoarea-links ul li:after{
+    				width: 0%;
+    				height: 2px;
+    				background: #f44336;
+    				display: block;
+   				 margin: auto;
+		}
+		
+		.logoarea-links ul li after:hover{
+				color:white ;
+				background:yellow;
+		}
+		
+		
+			.menuarea{
+					width: 90%;
+					color:white;
+					position: absolute;
+					top: 50px;
+					left: 50px;
+					
+					text-align: center;
+					transform: (50%,50%);
+			
+		}
+			.menuarea h1{
+					font-size: 62px;
+					
+					
+		}
+			.menuarea p{
+					margin: 10px 40px;
+					font-size:16px;
+					color: white;
+					
+		}
+			.button-btn{
+					display: inline-block;
+					text-decoration:none;
+					color: white;
+					border: 4px solid white;
+					font-size: 20px;
+					background: transparent;
+					position: relative;
+					cursor: pointer;
+			
+		}
+			.button-btn:hover{
+					border: 1px solid yellow;
+					background: yellow;
+		}
+		#courses{
+			width: 80%;
+			margin: auto;
+			text-align: center;
+			padding-top: 100px;
+
+		}
+			h1{
+				font-size: 36px;
+				font-weight: 700;
+		}
+			p{
+				font-size: 15px;
+				color: grey;
+		
+		}
+			.rarea{
+				margin-top: 5%;
+   				display: flex;
+    				justify-content: space-between;
+		}
+			.titlearea{
+				
+				 flex-basis: 31%;
+    				background:black;
+   		 		border-radius: 10px;
+    				margin-bottom: 5%;
+    				padding: 20px 12px;
+    				box-sizing: border-box;
+		}
+			.titlearea{
+				overflow: none;
+		}
+			h3{
+				color:white;
+				text-align: center;
+		}
+			.titlearea:hover{
+				box-shadow: 5px 5px 5px 5px grey;
+		}
+		#campus{
+    			width: 80%;
+   			 margin: auto;
+    			text-align: center;
+   			 padding-top: 50px;
+		}
+			.campus-col{
+   	 				flex-basis: 32%;
+    					border-radius: 10px;
+    					margin-bottom: 30px;
+    					position: relative;
+    					overflow: hidden;
+		}
+			.campus-col img{
+    					width: 20%;
+    					display: block;
+					
+		}
+			.layer{
+    					background:transparent;
+    					height: 100%;
+    					width: 20%;
+   					 position: absolute;
+    					top: 0;
+    					left: 0;
+   					 transition: 1s;
+		}
+			.layer:hover{
+					background: rgba(211, 0, 0, 0.2);
+
+		}
+			.layer h3{
+    					width: 100%;
+   					 font-weight: 500;
+    					color: white;
+    					font-size: 26px;
+    					bottom: 0;
+    					left: 50%;
+    					transform: translateX(-50%);
+   					 position: absolute;
+    					opacity: 0;
+    					transition: 0.5s;
+		}
+					.layer:hover h3{
+    					bottom: 60%;
+    					opacity: 1;
+    					
+		}
+		#facilities{
+    			width: 80%;
+   			 margin: auto;
+   			 text-align: center;
+    			padding-top: 50px;
+		}
+			.facilities-col{
+    					flex-basis: 31%; 
+    					border-radius: 10px;
+    					margin-bottom: 5%;
+   				 	text-align: left;
+				}
+			.facilities-col img{
+    					width: 20%;
+    					border-radius: 10px;
+				}
+			.facilities-col p{
+    					padding: 0;
+				}
+			.facilities-col h3{
+    					margin-top: 16px;
+    					margin-bottom: 15px;
+    					text-align: left;
+		}
+			.firsttime{
+				width:80%;
+				margin:auto;
+				padding-top:100px;
+				text-align:center;
+		}
+			.firsttime-s	{
+				border-radius:10px;
+				margin-bottom:5%;
+				text-align:left;
+				background:#fff3f3;
+				padding:25px;
+				display:flex;
+		}
+			.firsttime-s img{
+				height:100px;
+				margin-left:5px;
+				margin-right:30px;
+				border-radius:50%;
+				
+		}
+			.firsttime-s p{
+				padding:0px;
+				
+		}	
+			.firsttime-s h4{
+				margin-top:15px;
+				text-algin:left;
+		}
+		@media(max-width:700px){
+				.firsttime-s img{
+				margin-left:0px;
+				margin-right:15px;	
+			}
+				
+				
+		}	
+		.footer{
+   			 width: 100%;
+    			text-align: center;
+    			padding: 30px 0;
+		}
+			.footer h4{
+   				 margin-bottom: 25px;
+    				margin-top: 20px;
+    				font-weight: 600;
+		}		
+		</style>
+	</head>	
+	<body>
+		<div id="mainarea">
+			<div id="logoarea">
+				<a herf="index5.html"></a>
+				<img src="aaa.png">
+				<div class="logoarea-links">
+					<ul>
+						<li><a href="">HOME</a></li>
+						<li><a href="">ABOUT</a></li>
+						<li><a href="">COURSE</a></li>
+						<li><a href="">BLOG</a></li>
+						<li><a href="">CONTACT</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		<div class="menuarea">
+			<h1>World's Biggest University</h1>
+			<p>We’re a leading research university with a heart. Founded in the decade that the U.S. Constitution was signed, we’re the nation’s oldest 			Catholic and Jesuit university.
+        			Today we’re a forward-looking, diverse community devoted to social justice, restless inquiry and respect for each person’s individual needs and 			talents..</p>
+			<a class="button-btn" href="">visit Us To know More</a>
+		</div>
+		<div class="courses">
+
+		
+			<div id="courses">
+			<h1>Courses we offer</h1>
+				<p>Jamshedpur is a large city set between the Subarnarekha and Kharkai rivers in the east Indian state of Jharkhand. It’s known for 				huge, tree-lined Jubilee Park, where the Tata Steel Zoological Park has resident species including tigers and leopards. To the east, the 				hilltop Bhuvaneshwari Temple has an 				elaborate 5-story entrance tower. North of the city.</p>
+			<div class="rarea">
+				<div class="titlearea">
+					<h3>Undergraduate Program</h3>
+					<p>My class name is sura munduiya i live in jamshedpur iam study in tata workers union high school sidhgora jamshedpur 					</p>
+				</div>
+				
+				<div class="titlearea">
+					<h3>Graduate Programs</h3>
+					<p>My class name is sura munduiya i live in jamshedpur iam study in tata workers union high school sidhgora jamshedpur 					</p>
+				</div>
+				
+				<div class="titlearea">
+					<h3>Post Graduation</h3>
+					<p>My class name is sura munduiya i live in jamshedpur iam study in tata workers union high school sidhgora jamshedpur 					</p>
+				</div>
+			
+		</div>
+		<div class="campus">
+				<h1>Our Global Campus</h1>
+				<p>The University of Hartford's main campus is located on Bloomfield Avenue. Surrounded by green space, the main campus is 				divided into residential and academic buildings connected by a bridge that overlooks the north branch of the Park River, known to us as 				Hog River.</p> 
+		<div class="row">
+          	  		<div class="campus-col">
+                			<img src="jo.jpeg">
+                			<div class="layer">
+                    			<h3>LONDON</h3>
+                			</div>
+           			 </div>
+            			<div class="campus-col">
+                			<img src="do.jpeg">
+               	 			<div class="layer">
+                    			<h3>NEW YORK</h3>
+                			</div>
+            			</div>
+            			<div class="campus-col">
+                			<img src="top.jpeg">
+                			<div class="layer">
+                    			<h3>WASHINGTON</h3>
+                			</div>
+          			  </div>   
+        		</div>
+		<div class="fac">
+				<h1>Our Facilities</h1>
+				<P>We commit to meet the financial need of every admitted undergraduate student. We don’t consider your ability to pay when we 				review your application, and we don’t base our decision on whether you can cover the cost. If you’re accepted here, you belong 				here.</P>
+				<div class="row">
+       					 <div class="facilities-col">
+            						<img src="library.png">
+                					<h3>World Class Library</h3>
+                					<p>Pursue research at Eduford’s libraries, which include more than 3.5 million holdings. Whether your focus is 						on a specific discipline, interdisciplinary areas or emerging fields, our libraries offer academic resources, a maker 						hub, collaborative spaces and more.</p>
+            					</div>
+            					<div class="facilities-col">
+               						 <img src="basketball.png">
+                    					<h3>Largest Play Ground</h3>
+                    					<p>The College introduces students to philosophy and theology and challenges them to delve deeply into the arts, 						humanities, languages, social sciences and sciences.</p>
+               					 </div>
+                				<div class="facilities-col">
+                    					<img src="cafeteria.png">
+                        					<h3>Tasty and Healthy Food.</h3>
+                        					<p>Whether students pursue studies in Arabic, chemistry, government or one of hundreds of other opportunities, 						they are part of a rich legacy of academic excellence designed to serve them well in an ever-changing world.</p>
+                    				</div>
+        				</div>
+		</div>
+		<section class="firsttime">
+			<h1>what our student says</h1>
+				<P>We commit to meet the financial need of every admitted undergraduate student. We don’t consider your ability to pay when we 				review your application, and we don’t base our decision on whether you can cover the cost. If you’re accepted here, you belong 				here.</P>
+			<div class="show">
+				<div class="firsttime-s">
+					<img src="mes.png">
+					<div>
+					<p>We commit to meet the financial need of every admitted undergraduate student.</p>
+					<h4>sura</h4>
+					</div>
+				</div>
+				<div class="firsttime-s">
+					<img src="user.png">
+					<div>
+					<p>We commit to meet the financial need of every admitted undergraduate student.</p>
+					<h4>puja</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="footer">
+			<h4>About us</h4>
+			 <p>We’re a leading research university with a heart. Founded in the decade that the U.S. Constitution was signed, we’re the nation’s oldest 				Catholic and Jesuit university.
+   				 <br>    
+   			 We’re a community of people who bridge our disparate experiences and identities. Meet the people and places that make Eduford home.</p>
+		</section>		
+	</body>
+</html>
